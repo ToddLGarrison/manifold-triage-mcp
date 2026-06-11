@@ -4,7 +4,7 @@ import Anthropic from "@anthropic-ai/sdk";
 import { z } from "zod";
 import dotenv from "dotenv";
 
-dotenv.config();
+dotenv.config({ quiet: true });
 
 const server = new McpServer({
   name: "manifold-triage-mcp",
